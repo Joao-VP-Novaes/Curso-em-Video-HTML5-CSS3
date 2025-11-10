@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="./imgs/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./imgs/img-m.png" type="image/png">
+        <img src="./imgs/img-g.png" alt="Imagem Grande">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    
+    <!-- MP3 OGG WAV -->
+    <audio preload="metadata" controls autoplay>
+        <source src="./midia/sadBum.mp3" type="audio/mpeg">
+        <!-- <source src="./midia/sadBum.wav" type="audio/wav"> -->
+        <!-- <source src="./midia/sadBum.ogg" type="audio/ogg"> -->
+        Infelizmente, seu navegador não consegue reproduzir arquivos de áudio. Clique
+        <a href="./midia/sadBum.mp3" download="./midia/sadBum.mp3" type="audio/mpeg"></a>>Aqui</a> para baixar o arquivo mp3.
+    </audio>   
+</body>
+</html>
